@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  height: 20rem;
+  width: 25rem;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  list-style: none;
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(54, 12, 190);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+figure {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+footer {
+  margin-top: 5rem;
+  color: grey;
+  font-size: 2rem;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 2rem;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2.4rem;
+}
+form {
+  text-align: center;
+}
+button {
+  background-color: white;
+  padding: 1.6rem 2.4rem;
+  cursor: pointer;
+}
