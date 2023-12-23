@@ -1,0 +1,21 @@
+@media screen and (max-width: 450px) {
+  textarea {
+    width: 30rem;
+  }
+  .footer_boxes {
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 2.4rem 1.6rem;
+  }
+  .footer_box-text p {
+    font-size: 1.2rem;
+  }
+  .footer_svg {
+    height: 1.4rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  textarea {
+    width: 20rem;
+  }
+}

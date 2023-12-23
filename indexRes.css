@@ -1,0 +1,236 @@
+@media screen and (max-width: 1388px) {
+  .explore__city-img {
+    width: 20rem;
+    height: 15rem;
+  }
+  .christmas_fair-img {
+    width: 15rem;
+    height: 12rem;
+  }
+  .christmas_fair-img {
+    width: 15rem;
+    height: 12rem;
+  }
+  .christmas_fair-header {
+    color: #172554;
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+  }
+  .christmas_fair-text {
+    color: #1c1917;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .christmas_fair {
+    grid-template-columns: 52rem 1fr;
+  }
+
+  .christmas_fair-header {
+    color: #172554;
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+  }
+  .christmas_fair-text {
+    color: #1c1917;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+  }
+}
+@media screen and (max-width: 1041px) {
+  .explore__city-img {
+    width: 17rem;
+    height: 12rem;
+  }
+  .christmas_fair {
+    margin-bottom: 8rem;
+  }
+  .christmas_fair-img-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .review {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 900px) {
+  .christmas_fair {
+    gap: 0rem;
+    margin-bottom: 25rem;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  .christmas_fair-text-box {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  .christmas_fair-img-box {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    grid-template-columns: 1/-1;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    align-self: center;
+    column-gap: 2rem;
+  }
+  .news_number {
+    font-size: 2.6rem;
+  }
+  .news_text {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 820px) {
+  .explore__city-img {
+    width: 14rem;
+    height: 13rem;
+  }
+  .explore__city-p-content {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    width: 95%;
+  }
+  .img-introPage {
+    height: 20rem;
+    width: 30rem;
+  }
+  .christmas_fair {
+    margin-bottom: 42rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .christmas_fair-img-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .news {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 2.4rem;
+  }
+  .news_number {
+    font-size: 2rem;
+  }
+  .news_text {
+    font-size: 1.4rem;
+  }
+  .upcoming_boxes {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .upcoming_box {
+    width: 23rem;
+  }
+  .upcoming_img {
+    height: 15rem;
+    margin-bottom: 0.5rem;
+  }
+  .upcoming_header {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 541px) {
+  .christmas_fair {
+    margin-bottom: 45rem;
+  }
+}
+@media screen and (max-width: 498px) {
+  /* .christmas_fair {
+    margin-bottom: 50rem;
+  } */
+  /* .christmas_fair-img-box {
+    grid-template-columns: repeat(3, 1fr);
+  } */
+  .christmas_fair > h2 {
+    font-size: 2.4rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    padding: 1.4rem;
+  }
+  .christmas_fair-img {
+    height: 10rem;
+    width: 15rem;
+  }
+  .christmas_fair-text-box {
+    padding: 0 2rem;
+  }
+  .footer_boxes {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .christmas_fair {
+    margin-bottom: 50rem;
+  }
+  .review_person {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .review_img {
+    height: 8rem;
+    width: 10rem;
+  }
+  .review_text {
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+  }
+
+  /* .christmas_fair-img-box {
+      grid-template-columns: repeat(3, 1fr);
+    } */
+}
+@media screen and (max-width: 327px) {
+  .img-introPage {
+    height: 13rem;
+    width: 20rem;
+  }
+  .explore__city-img {
+    height: 14rem;
+    width: 20rem;
+  }
+  .christmas_fair {
+    margin-bottom: 110rem;
+  }
+  .christmas_fair-img-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .christmas_fair-img {
+    height: 12rem;
+    width: 17rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .christmas_fair {
+    margin-bottom: 115rem;
+  }
+  .review_text {
+    font-size: 1rem;
+  }
+  .upcoming_box {
+    width: 18rem;
+  }
+  .upcoming_img {
+    height: 14rem;
+  }
+}
+@media screen and (max-width: 266px) {
+  html {
+    font-size: 50%;
+  }
+  .christmas_fair {
+    margin-bottom: 120rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  .christmas_fair {
+    margin-bottom: 130rem;
+  }
+}

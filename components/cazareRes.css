@@ -1,0 +1,16 @@
+main {
+  margin-bottom: 2.4rem;
+}
+@media screen and (max-width: 450px) {
+  .footer_boxes {
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 2.4rem 1.6rem;
+  }
+  .footer_box-text p {
+    font-size: 1.2rem;
+  }
+  .footer_svg {
+    height: 1.4rem;
+  }
+}

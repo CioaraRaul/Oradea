@@ -4,18 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="evenimenteFooter.css" />
+    <link rel="stylesheet" href="evenimenteRes.css" />
+    <link rel="stylesheet" href="../mobile.css" />
+    <script type="module" src="../navbar.js"></script>
     <title>Evenimente</title>
   </head>
   <body>
     <header>
       <nav>
         <nav>
-          <img src="../img/logo.png" alt="Logo" />
+          <a href="../index.html"
+            ><img
+              src="../img/logo-removebg-preview.png"
+              alt="Logo"
+              class="logoMain"
+          /></a>
         </nav>
         <div>
-          <nav>
+          <div class="btn-mobile">
+            <button class="mobile">
+              <img src="../SVG/icons8-menu-100.png" alt="" class="icon" />
+            </button>
+          </div>
+          <nav class="mobile-width navbar_header">
             <li>
-              <a href="../index.html ">Pagina principală</a>
+              <a href="../index.html">Pagina principală</a>
             </li>
             <li>
               <a href="ObiectiveTuristice.html">Obiective turistice </a>
@@ -24,7 +38,10 @@
               <a href="Cazare.html">Cazare</a>
             </li>
             <li>
-              <a href="#">Evenimente</a>
+              <a href="Evenimente.html">Evenimente</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
             </li>
           </nav>
         </div>
@@ -69,8 +86,27 @@
         </li>
       </ul>
     </main>
-    <footer>
-      <em>@copyright 2023</em>
-    </footer>
+    <div class="footer_boxes">
+      <div class="footer_box-text">
+        <p>@Cioara Raul/All rights served</p>
+      </div>
+      <div class="footer_boxes-links">
+        <div class="footer_box-link">
+          <a href="https://www.facebook.com/cioara.raul.7/photos_by">
+            <img src="../svg/facebook.svg" alt="insta" class="footer_svg" />
+          </a>
+        </div>
+        <div class="footer_box-link">
+          <a href="https://www.instagram.com/">
+            <img src="../svg/instagram.svg" alt="insta" class="footer_svg" />
+          </a>
+        </div>
+        <div class="footer_box-link">
+          <a href="https://x.com/cioara_raul?t=iC0nYt5m0LKUfhG3cYoG_w&s=08 ">
+            <img src="../svg/twitter.svg" alt="twiter" class="footer_svg" />
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

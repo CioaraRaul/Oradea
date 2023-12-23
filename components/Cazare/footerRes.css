@@ -1,0 +1,23 @@
+@media screen and (max-width: 1500px) {
+  button {
+    margin-bottom: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer_boxes {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .footer_boxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.4rem 1.6rem;
+  }
+  .footer_boxex > div {
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+}

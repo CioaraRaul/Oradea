@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleNew.css" />
+    <link rel="stylesheet" href="indexRes.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <script type="module" src="script.js"></script>
+    <script type="module" src="navbar.js"></script>
+
     <title>Oradea 🏠</title>
   </head>
   <body>
     <header>
       <nav>
         <nav>
-          <img src="img/logo.png" alt="Logo" />
+          <a href="index.html"
+            ><img
+              src="img/logo-removebg-preview.png"
+              alt="Logo"
+              class="logoMain"
+          /></a>
         </nav>
         <div>
-          <nav>
+          <div class="btn-mobile">
+            <button class="mobile">
+              <img src="SVG/icons8-menu-100.png" alt="" class="icon" />
+            </button>
+          </div>
+          <nav class="mobile-width navbar_header">
             <li>
               <a href="index.html">Pagina principală</a>
             </li>
@@ -28,20 +44,333 @@
             <li>
               <a href="components/Evenimente.html">Evenimente</a>
             </li>
+            <li>
+              <a href="components/Contact.html">Contact</a>
+            </li>
           </nav>
         </div>
       </nav>
     </header>
     <main>
-      <h1>Bine ați venit în Oradea</h1>
-      <p>
-        Oradea, un oraș cu o istorie bogată și o frumusețe aparte, te așteaptă
-        să explorezi. Situat în vestul României, la granița cu Ungaria, Oradea
-        te întâmpină cu clădiri istorice impunătoare, o arhitectură fascinantă
-        și o atmosferă primitoare. Descoperă atracțiile culturale, parcurile
-        pline de verdeață, și bucătăria tradițională de excepție.
-      </p>
+      <div class="container">
+        <h1>Bine ați venit în Oradea</h1>
+        <p class="description">
+          Oradea, un oraș cu o istorie bogată și o frumusețe aparte, te așteaptă
+          să explorezi. Situat în vestul României, la granița cu Ungaria, Oradea
+          te întâmpină cu clădiri istorice impunătoare, o arhitectură fascinantă
+          și o atmosferă primitoare. Descoperă atracțiile culturale, parcurile
+          pline de verdeață, și bucătăria tradițională de excepție.
+        </p>
+        <div class="div-img img-slider">
+          <div class="img-rela">
+            <div class="images">
+              <img
+                src="https://media.istockphoto.com/id/1369291301/photo/oradea-romania-amazing-christmas-market-in-union-square.jpg?s=612x612&w=0&k=20&c=LzxlKdXsPGUDY3mIkQdm-1rs6--TwsMs6q-g8bMJTbk="
+                alt="oradea"
+                class="img-introPage active-img-slider"
+              />
+              <img
+                src="https://cdn.pixabay.com/photo/2018/04/02/13/45/oradea-3283910_1280.jpg"
+                alt="oradea"
+                class="img-introPage"
+              />
+              <img
+                src="https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA3dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjEl/MkYwMyUyRjI4JTJGMTMwNjQ0Nl8xMzA2/NDQ2X29yYWRlYS5qcGcmdz03ODAmaD00/NDAmaGFzaD1hOWEwYmUzOTAwNzQxODEwOWFlODc2YWM2NTU2ZmUwYg==.thumb.jpg"
+                alt="Oradea"
+                class="img-introPage"
+              />
+            </div>
+
+            <div class="arrow left-arrow">&#9665;</div>
+            <div class="arrow right-arrow">&#9655;</div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <div class="explore__city">
+      <h3 class="explore__city-header">Ce sa faci in Oradea</h3>
+      <p class="explore__city-p">
+        Descoperă un oraș primitor, proaspăt și plin de viață! Oradea prinde
+        culoare și te acaparează printr-un mix arhitectural surprinzător. 89 de
+        obiective în stil #ArtNouveau domnesc în armonie aici, alături de
+        clădiri în stil seccession, baroc, bastionar stelar-medieval. Însă
+        Oradea este mult mai mult decât #ArtNouveau. Este un oraș înfloritor, un
+        oraș al relaxării și al sănătății, un paradis al apelor termale pe care
+        îl formează alături de Băile Felix și Băile 1 Mai. Toate acestea fac din
+        Oradea un #SlowLivingCity în care trăiești cu drag și în care îți vei
+        dori cu siguranță să revii!
+      </p>
+      <div class="explore__city__boxes">
+        <div class="explore__city-box">
+          <div class="explore__city-individual">
+            <img
+              src="https://www.aquapark-nymphaea.ro/images/pages/interior/bazine/1000x750/bi_grid_1.jpg"
+              alt="aquapark-nymphaea"
+              class="explore__city-img"
+            />
+            <div class="explore__city-gradient"></div>
+          </div>
+          <div class="explore__city-p-box">
+            <p class="explore__city-p-content">Relaxare</p>
+          </div>
+        </div>
+        <div class="explore__city-box">
+          <div class="explore__city-individual">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="restaurant"
+              class="explore__city-img"
+            />
+            <div class="explore__city-gradient"></div>
+          </div>
+          <div class="explore__city-p-box">
+            <p class="explore__city-p-content">Restaurante</p>
+          </div>
+        </div>
+        <div class="explore__city-box">
+          <div class="explore__city-individual">
+            <img
+              src="https://cdn.ebihoreanul.ro/static/gallery_big/04-teren.jpg"
+              alt="aquapark-nymphaea"
+              class="explore__city-img"
+            />
+            <div class="explore__city-gradient"></div>
+          </div>
+          <div class="explore__city-p-box">
+            <p class="explore__city-p-content">Sporturi</p>
+          </div>
+        </div>
+        <div class="explore__city-box">
+          <div class="explore__city-individual">
+            <img
+              src="https://www.oradeaheritage.ro/wp-content/uploads/2018/08/Palatul-Moskovits-Miska-Oradea-2-of-3.jpg"
+              alt="arhitecturi"
+              class="explore__city-img"
+            />
+            <div class="explore__city-gradient"></div>
+          </div>
+          <div class="explore__city-p-box">
+            <p class="explore__city-p-content">Arhitecturi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="christmas_fair">
+      <h2>Targul de Craciun din Oradea</h2>
+      <div class="christmas_fair-text-box">
+        <div>
+          <h3 class="christmas_fair-header">Decorațiuni festive</h3>
+          <p class="christmas_fair-text">
+            Orașul este frumos decorat cu lumini strălucitoare, ornamente de
+            Crăciun, și alte elemente festive care creează o atmosferă magică.
+          </p>
+        </div>
+        <div>
+          <h3 class="christmas_fair-header">
+            Standuri cu produse tradiționale
+          </h3>
+          <p class="christmas_fair-text">
+            Pe parcursul târgului, vei găsi numeroase standuri care oferă
+            produse tradiționale de Crăciun, cum ar fi decorațiuni handmade,
+            obiecte artizanale, produse de patiserie specifice sărbătorilor, și
+            cadouri unice.
+          </p>
+        </div>
+        <div>
+          <h3 class="christmas_fair-header">Concerte și spectacole</h3>
+          <p class="christmas_fair-text">
+            Târgul de Crăciun adesea găzduiește concerte de colinde, spectacole
+            artistice și evenimente culturale care să îmbogățească experiența
+            vizitatorilor.
+          </p>
+        </div>
+        <div>
+          <h3 class="christmas_fair-header">Atmosferă festivă</h3>
+          <p class="christmas_fair-text">
+            Orașul devine o destinație festivă, cu oameni venind să se bucure de
+            atmosfera caldă și să împărtășească bucuria sărbătorilor împreună.
+          </p>
+        </div>
+      </div>
+      <div class="christmas_fair-img-box">
+        <img
+          src="https://www.ebihoreanul.ro/user_files/visit-oradea-02122022-02.jpg"
+          alt="fairOradea"
+          class="christmas_fair-img"
+        />
+        <img
+          src="https://i.ytimg.com/vi/4oAQjL_Dd1Y/maxresdefault.jpg"
+          alt="fairOradea"
+          class="christmas_fair-img"
+        /><img
+          src="https://www.bihon.ro/wp-content/uploads/2021/12/8450582thumbnaillumini.jpg"
+          alt="fairOradea"
+          class="christmas_fair-img"
+        /><img
+          src="https://myoradea.ro/wp-content/uploads/2023/09/roata-wheel-patinoar-targul-de-craciun-oradea-myoradea-editia-2022-8-1920x1280.webp"
+          alt="fairOradea"
+          class="christmas_fair-img"
+        />
+        <img
+          src="https://img.observatornews.ro/?u=https%3A%2F%2Fivm.antenaplay.ro%2Fthumbs%2Fantena1%2F2021%2F12%2F04%2FH1jcZOMosOR_3O.jpg&w=1200"
+          alt="fairOradea"
+          class="christmas_fair-img"
+        /><img
+          src="https://infooradea.ro/wp-content/uploads/2022/12/PIata-Unirii-targul-de-craciun-oradea-1170x550.jpg"
+          alt="fairOradea"
+          class="christmas_fair-img"
+        />
+      </div>
+    </div>
+    <div class="news">
+      <div class="news_box">
+        <span class="news_number">196,367</span>
+        <p class="news_text">Populatie</p>
+      </div>
+      <div class="news_box">
+        <span class="news_number">36kk</span>
+        <p class="news_text">bani investiti</p>
+      </div>
+      <div class="news_box">
+        <span class="news_number">156,8</span>
+        <p class="news_text">Spatiu ocupat</p>
+      </div>
+    </div>
+    <div class="review">
+      <div class="review_box">
+        <div class="review_person">
+          <img
+            src="https://images.unsplash.com/photo-1542587329-0f49fcc4bed1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="review_img"
+          />
+          <h3 class="review_header">Mihaela Draghiu</h3>
+        </div>
+        <p class="review_text">
+          "Prima mea vizită în Oradea a fost cu adevărat magică! Arhitectura
+          istorică și atmosfera autentică m-au fascinat. Piețele cochete și
+          cafenelele primitoare au creat o ambianță relaxantă. Băile termale
+          Felix au adăugat nota perfectă de relaxare. O destinație pe care cu
+          siguranță o voi recomanda!"
+        </p>
+      </div>
+      <div class="review_box">
+        <div class="review_person">
+          <img
+            src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="review_img"
+          />
+          <h3 class="review_header">Sofia Craciun</h3>
+        </div>
+        <p class="review_text">
+          "Prima mea vizită în Oradea a fost cu adevărat magică! Arhitectura
+          istorică și atmosfera autentică m-au fascinat. Piețele cochete și
+          cafenelele primitoare au creat o ambianță relaxantă. Băile termale
+          Felix au adăugat nota perfectă de relaxare. O destinație pe care cu
+          siguranță o voi recomanda!"
+        </p>
+      </div>
+      <div class="review_box">
+        <div class="review_person">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="review_img"
+          />
+          <h3 class="review_header">Rubert Morgovan</h3>
+        </div>
+        <p class="review_text">
+          "Prima mea vizită în Oradea a fost cu adevărat magică! Arhitectura
+          istorică și atmosfera autentică m-au fascinat. Piețele cochete și
+          cafenelele primitoare au creat o ambianță relaxantă. Băile termale
+          Felix au adăugat nota perfectă de relaxare. O destinație pe care cu
+          siguranță o voi recomanda!"
+        </p>
+      </div>
+    </div>
+    <div class="upcoming">
+      <h2 class="upcoming_news">Ce va urma</h2>
+      <div class="upcoming_boxes">
+        <div class="upcoming_box">
+          <img
+            src="https://www.bihon.ro/wp-content/uploads/2022/11/+otf/650x435/Lp1cU0EI3j42n9u1evJrP05PVF9WRVJZX1NFQwbszjYynyXBu8z0b77g+imWxHR3OBVE__D7H0fs6pWPO/93227603162838286804882867692298868560946657601863n.jpg"
+            alt=""
+            class="upcoming_img"
+          />
+          <div class="upcoming_content">
+            <p class="upcoming_header">
+              Consilierii locali au aprobat, joi, proiectul pasajului subteran
+              la intersecția str. Oneștilor și Tudor Vladimirescu cu Lăpușului,
+              estimat la peste 61,9 milioane lei.Lucrarea ar putea începe în
+              2024, a mai spus primarul, anul viitor fiind rezervat pregătirii
+              proiectelor tehnice de execuție.
+            </p>
+          </div>
+        </div>
+        <div class="upcoming_box">
+          <img
+            src="https://www.visitoradea.com/photos/shares/Parcul_1_Decembrie.jpg"
+            alt=""
+            class="upcoming_img"
+          />
+          <div class="upcoming_content">
+            <p class="upcoming_header">
+              Consilierii locali au aprobat, cu o majoritate covârșitoare,
+              proiectul de modernizare a Parcului Central. Investiția, evaluată
+              la aproximativ 45 de milioane de lei, vizează crearea unui spațiu
+              verde mai prietenos și accesibil pentru comunitate. Lucrările sunt
+              programate să înceapă în primăvara anului viitor.
+            </p>
+          </div>
+        </div>
+        <div class="upcoming_box">
+          <img
+            src="https://www.oradea.ro/fisiere/userfiles/Harta_pista_biciclete.PNG"
+            alt=""
+            class="upcoming_img"
+          />
+          <div class="upcoming_content">
+            <p class="upcoming_header">
+              Consiliul Local a aprobat planurile de extindere a rețelei de
+              piste de biciclete în oraș. Proiectul, estimat la 28 de milioane
+              de lei, urmărește crearea unui mediu urban sustenabil și
+              promovarea transportului ecologic. Implementarea va începe în
+              etape, iar prima tranșă de piste este planificată să fie
+              funcțională în următorii doi ani.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_boxes">
+      <div class="footer_box-text">
+        <p>@Cioara Raul/All rights served</p>
+      </div>
+      <div class="footer_boxes-links">
+        <div class="footer_box-link">
+          <a href="https://www.facebook.com/cioara.raul.7/photos_by">
+            <img src="svg/facebook.svg" alt="insta" class="footer_svg" />
+          </a>
+        </div>
+        <div class="footer_box-link">
+          <a href="https://www.instagram.com/">
+            <img src="svg/instagram.svg" alt="insta" class="footer_svg" />
+          </a>
+        </div>
+        <div class="footer_box-link">
+          <a href="https://x.com/cioara_raul?t=iC0nYt5m0LKUfhG3cYoG_w&s=08 ">
+            <img src="svg/twitter.svg" alt="twiter" class="footer_svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <div class="div__footer">
+        <p><em>@Cioara Raul/All rights served</em></p>
+      </div>
+    </footer> -->
   </body>
 </html>

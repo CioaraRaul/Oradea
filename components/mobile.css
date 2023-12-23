@@ -1,0 +1,51 @@
+/* Mobile menu styles */
+.mobile-menu {
+  display: none; /* Hide the mobile menu by default */
+}
+
+.mobile-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobile-menu li {
+  padding: 10px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Mobile menu toggle button styles */
+.mobile-menu-toggle {
+  display: none; /* Hide the toggle button for larger screens */
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Media query to show/hide elements based on screen width */
+@media screen and (max-width: 768px) {
+  /* Show the mobile menu and hide the desktop menu */
+  .mobile-menu {
+    display: block;
+  }
+
+  /* Hide the mobile menu toggle button */
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  /* Hide the desktop menu on smaller screens */
+  .navbar_header {
+    display: none;
+  }
+}
+
+/* Additional style to show the mobile menu when the toggle button is clicked */
+.mobile-menu.show {
+  display: block;
+}

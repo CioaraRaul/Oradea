@@ -3,110 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parc Central</title>
+    <link rel="stylesheet" href="css/obiect.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../mobile.css" />
+    <script type="module" src="../../navbar.js"></script>
+    <title>Parcul Central</title>
   </head>
   <body>
     <header>
-      <h1>Parc Central</h1>
+      <nav>
+        <nav>
+          <a href="../../index.html"
+            ><img
+              src="../../img/logo-removebg-preview.png"
+              alt="Logo"
+              class="logoMain"
+          /></a>
+        </nav>
+        <div>
+          <div class="btn-mobile">
+            <button class="mobile">
+              <img src="../../SVG/icons8-menu-100.png" alt="" class="icon" />
+            </button>
+          </div>
+          <nav class="mobile-width navbar_header">
+            <li>
+              <a href="../../../index.html">Pagina principală</a>
+            </li>
+            <li>
+              <a href="../ObiectiveTuristice.html">Obiective turistice </a>
+            </li>
+            <li>
+              <a href="../Cazare.html">Cazare</a>
+            </li>
+            <li>
+              <a href="../Evenimente.html">Evenimente</a>
+            </li>
+            <li>
+              <a href="../Contact.html">Contact</a>
+            </li>
+          </nav>
+        </div>
+      </nav>
     </header>
-    <main>
-      <img src="../../img/centralPark.jpeg" alt="cetateaOradea" />
-      <h3>
-        Parcul Central din Oradea este un spațiu verde frumos și un loc de
-        recreere situat în centrul orașului Oradea, România. Acesta este un loc
-        de relaxare și distracție pentru locuitorii locali și turiști. Iată mai
-        multe informații despre Parcul Central:
-      </h3>
-      <ol>
-        <li><a href="#istorie">Istorie </a></li>
-        <li><a href="#stiluri">Atracții Naturale</a></li>
-        <li><a href="#rol">Aleile și Grădinile</a></li>
-        <li><a href="#renovari">Zonă de Joacă pentru Copii</a></li>
-        <li><a href="#obiectiv">Evenimente și Spectacole</a></li>
-        <li><a href="#evenimente">Cafenele și Terase</a></li>
-        <li><a href="#panorama">Statui și Monumente</a></li>
-      </ol>
-      <div id="istorie">
-        <h3>Istorie</h3>
-        <ul>
-          <li>
-            Parcul Central are o istorie îndelungată și a fost fondat în secolul
-            al XIX-lea, făcându-l unul dintre cele mai vechi parcuri din
-            România.
-          </li>
-          <li>
-            Acesta a fost inițial conceput ca un parc privat pentru
-            aristocrație, dar a devenit mai târziu accesibil publicului larg.
-          </li>
-        </ul>
+    <div class="container">
+      <div class="title">
+        <h1>Pagina Parcul Central</h1>
       </div>
-      <div>
-        <h3 id="stiluri">Atracții Naturale</h3>
-        <ul>
-          <li>
-            Parcul este înconjurat de vegetație luxuriantă, inclusiv copaci
-            seculari, flori și iarbă verde.
-          </li>
-          <li>
-            Aici puteți petrece timp în mijlocul naturii și să vă bucurați de
-            aerul proaspăt.
-          </li>
-        </ul>
+      <div class="content">
+        <div class="testimonials">
+          <p class="testimonials-p">
+            Parcul Central din Oradea este o oază de verdeață situată în inima
+            orașului. Acesta dispune de un lac central cu o fântână, oferind o
+            atmosferă liniștită, potrivită pentru plimbări relaxante în jurul
+            apei. Parcul este renumit pentru aleile bine întreținute, zonele de
+            joacă pentru copii și aranjamentele florale frumos colorate. De-a
+            lungul parcului, se găsesc statui și monumente care adaugă valoare
+            culturală și estetică spațiului verde. Există și zone cu bănci și
+            cafenele, oferind vizitatorilor locuri de relaxare. Parcul
+            găzduiește frecvent diverse evenimente culturale și activități în
+            aer liber, contribuind la atmosfera animată a acestui loc iubit atât
+            de localnici, cât și de turiști.
+          </p>
+        </div>
+        <div class="images">
+          <div class="img">
+            <img
+              src="https://cdn.cluj.com/ghidlocalcom/sites/2/2017/03/Parc_Salca_Tudor_Vascan-5.jpg"
+              alt=""
+              class="img_box"
+            />
+          </div>
+          <div class="img">
+            <img
+              src="https://www.visitoradea.com/photos/shares/Parcul_1_Decembrie.jpg"
+              alt=""
+              class="img_box"
+            />
+          </div>
+          <div class="img">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+              class="img_box"
+            />
+          </div>
+          <div class="img">
+            <img
+              src="https://www.ebihoreanul.ro/modules/news/files/randari-parc-1-decembrie-oradea-30032023-5.jpg"
+              alt=""
+              class="img_box"
+            />
+          </div>
+        </div>
       </div>
-      <div>
-        <h3 id="rol">Aleile și Grădinile</h3>
-        <ul>
-          <li>
-            Parcul este străbătut de alei pavate și drumuri pietruite, ceea ce
-            face plimbările relaxante și plăcute. Grădinile bine întreținute
-            adaugă frumusețe peisajului.
-          </li>
-        </ul>
+    </div>
+    <div class="footer_boxes">
+      <div class="footer_box-text">
+        <p>@Cioara Raul/All rights served</p>
       </div>
-
-      <div>
-        <h3 id="renovari">Zonă de Joacă pentru Copii</h3>
-        <ul>
-          <li>
-            Parcul dispune de o zonă de joacă pentru copii, cu leagăne, tobogane
-            și alte facilități, făcându-l potrivit pentru familii.
-          </li>
-        </ul>
+      <div class="footer_boxes-links">
+        <div class="footer_box-link">
+          <a href="https://www.facebook.com/cioara.raul.7/photos_by">
+            <img src="../../svg/facebook.svg" alt="insta" class="footer_svg" />
+          </a>
+        </div>
+        <div class="footer_box-link">
+          <a href="https://www.instagram.com/">
+            <img src="../../svg/instagram.svg" alt="insta" class="footer_svg" />
+          </a>
+        </div>
+        <div class="footer_box-link">
+          <a href="https://x.com/cioara_raul?t=iC0nYt5m0LKUfhG3cYoG_w&s=08 ">
+            <img src="../../svg/twitter.svg" alt="twiter" class="footer_svg" />
+          </a>
+        </div>
       </div>
-      <div>
-        <h3 id="obiectiv">Evenimente și Spectacole</h3>
-        <ul>
-          <li>
-            Parcul găzduiește adesea evenimente culturale, concerte în aer liber
-            și spectacole artistice, ceea ce îl face un loc viu și animat.
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3 id="evenimente">Cafenele și Terase</h3>
-        <li>
-          Parcul are cafenele și terase unde puteți savura o cafea sau o gustare
-          în aer liber.
-        </li>
-      </div>
-
-      <div>
-        <h3 id="panorama">Statui și Monumente</h3>
-        <li>
-          În parcul Central veți găsi și diverse statui și monumente care
-          îmbogățesc atmosfera culturală a locului.
-        </li>
-      </div>
-
-      <p>
-        Parcul Central din Oradea este un loc plăcut pentru a petrece timp în
-        mijlocul naturii, pentru a face plimbări relaxante sau pentru a
-        participa la evenimente culturale. Acesta oferă o oază de liniște și
-        recreere în inima orașului.
-      </p>
-    </main>
-    <footer>
-      <em>Copyright @2023</em>
-    </footer>
+    </div>
   </body>
 </html>

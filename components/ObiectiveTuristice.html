@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="obiectiveRes.css">
+    <link rel="stylesheet" href="../mobile.css"><script type="module" src="../navbar.js"></script>
     <title>Obiective Turistice</title>
     <style>
       *,
@@ -28,15 +30,25 @@
     <header>
       <nav>
         <nav>
-          <img src="../img/logo.png" alt="Logo" />
+          <a href="../index.html"
+            ><img
+              src="../img/logo-removebg-preview.png"
+              alt="Logo"
+              class="logoMain"
+          /></a>
         </nav>
         <div>
-          <nav>
+          <div class="btn-mobile">
+            <button class="mobile">
+              <img src="../SVG/icons8-menu-100.png" alt="" class="icon" />
+            </button>
+          </div>
+          <nav class="mobile-width  navbar_header">
             <li>
               <a href="../index.html">Pagina principală</a>
             </li>
             <li>
-              <a href="#"
+              <a href="ObiectiveTuristice.html"
                 >Obiective turistice
               </a>
             </li>
@@ -46,19 +58,23 @@
             <li>
               <a href="Evenimente.html">Evenimente</a>
             </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
           </nav>
         </div>
       </nav>
     </header>
-    <ul style="list-style: none">
-      <li>
-        <figure>
+    <ul class="ul_obiecte" style="list-style: none;  "
+    style="max-width: 1100px;display: flex;flex-direction: column;">
+      <li >
+        <figure class="ul_obiecte_box">
           <img
             src="../img/cetateaOradea.jpg"
             alt="Cetatea Oradea"
             width="22%"
           />
-          <figcaption>
+          <figcaption class="ul_obiecte_content">
             <h3>Cetatea Oradea</h3>
             <p>
               Cetatea din Oradea are o istorie îndelungată și bogată, având ...
@@ -68,9 +84,9 @@
         </figure>
       </li>
       <li>
-        <figure>
+        <figure class="ul_obiecte_box">
           <img src="../img/blackEagle.jpg" alt="blackEagle" width="22%" />
-          <figcaption>
+          <figcaption class="ul_obiecte_content">
             <h3>Vulturul Negru</h3>
             <p>
                 Palatul Vulturul Negru este celebru pentru stilul său arhitectural Art Nouveau, care ...
@@ -80,13 +96,13 @@
         </figure>
       </li>
       <li>
-        <figure>
+        <figure class="ul_obiecte_box">
           <img
             src="../img/Cladirea-Primariei-Oradea.jpg"
             alt="Cladirea-Primariei-Oradea"
             width="22%"
           />
-          <figcaption>
+          <figcaption class="ul_obiecte_content"> 
             <h3>Cladirea Primariei Oradea</h3>
             <p>
                 Clădirea Primăriei Oradea este cunoscută pentru stilul său arhitectural eclectic. Acesta combină elemente ...
@@ -96,29 +112,29 @@
         </figure>
       </li>
       <li>
-        <figure>
+        <figure class="ul_obiecte_box">
           <img
             src="../img/gradina_zoo_nou.jpg"
             alt="gradina_zoo_nou"
             width="22%"
           />
-          <figcaption>
+          <figcaption class="ul_obiecte_content">
             <h3>Gradina Zoo</h3>
             <p>
                 Grădina Zoologică găzduiește o varietate de specii de animale, inclusiv mamifere, păsări, reptile și animale exotice...
               <a href="ObiectiveTuristiceComponent/GradinaZoo.html" ">Afla mai multe</a>
             </p>
           </figcaption>
-        </figure>
+        </figure >
       </li>
       <li>
-        <figure>
+        <figure class="ul_obiecte_box">
           <img
             src="../img/Palatul-Baroc.jpg"
             alt="Palatul-Baroc"
             width="22%"
           />
-          <figcaption>
+          <figcaption class="ul_obiecte_content">
             <h3>Palatul Baroc</h3>
             <p>
                 Palatul Baroc, cunoscut și sub numele de "Palatul Baroc Oradea," este o clădire istorică situată în orașul Oradea, România. ...
@@ -128,9 +144,9 @@
         </figure>
       </li>
       <li>
-        <figure>
+        <figure class="ul_obiecte_box">
           <img src="../img/nymphea.jpeg" alt="nymphea" width="22%" />
-          <figcaption>
+          <figcaption class="ul_obiecte_content">
             <h3>Nymphea Aquapark</h3>
             <p>
                 Nymphea Aquapark este un parc acvatic situat în Oradea, România, și reprezintă una dintre principalele destinații de ...
@@ -140,13 +156,13 @@
         </figure>
       </li>
       <li>
-        <figure>
+        <figure class="ul_obiecte_box">
           <img
             src="../img/centralPark.jpeg"
             alt="centralPark"
             width="22%"
           />
-          <figcaption>
+          <figcaption class="ul_obiecte_content">
             <h3>Parc Central</h3>
             <p>
              
@@ -157,13 +173,13 @@ Parcul Central din Oradea este un spațiu verde frumos și un loc de recreere si
         </figure>
       </li>
       <li>
-        <figure>
+        <figure class="ul_obiecte_box">
           <img
             src="../img/Muzeul-Țării-Crișurilor-Oradea.jpg"
             alt="Muzeul-Țării-Crișurilor-Oradea"
             width="22%"
           />
-          <figcaption>
+          <figcaption class="ul_obiecte_content">
             <h3>Muzeul Țării Crișurilor</h3>
             <p>
                 Muzeul Țării Crișurilor, cunoscut și sub numele de "Muzeul Țării Crișurilor Oradea," este un important muzeu regional situat în orașul Oradea, România. Acest muzeu are ...
@@ -173,29 +189,29 @@ Parcul Central din Oradea este un spațiu verde frumos și un loc de recreere si
         </figure>
       </li>
       <li>
-        <figure>
+        <figure class="ul_obiecte_box">
           <img
             src="../img/Episcopia-Greco.jpg"
             alt="Episcopia-Greco"
             width="22%"
           />
-          <figcaption>
+          <figcaption class="ul_obiecte_content">
             <h3>Episcopia Greco</h3>
             <p>
                 Episcopia Greco-Catolică Oradea este o jurisdicție bisericească a Bisericii Române Unite cu Roma, Greco-Catolică. Acesta este ...
               <a href="ObiectiveTuristiceComponent/EscopiaGreco.html" ">Afla mai multe</a>
             </p>
           </figcaption>
-        </figure>
+        </figure >
       </li>
       <li>
-        <figure>
+        <figure class="ul_obiecte_box">
           <img
             src="../img/biserica-cu-luna.jpg"
             alt="biserica-cu-luna"
             width="22%"
           />
-          <figcaption>
+          <figcaption class="ul_obiecte_content">
             <h3>Biserica cu Luna</h3>
             <p>
                 Biserica cu Luna este o biserică situată în Oradea, România, și este cunoscută pentru arhitectura sa deosebită și ...
@@ -205,5 +221,27 @@ Parcul Central din Oradea este un spațiu verde frumos și un loc de recreere si
         </figure>
       </li>
     </ul>
+    <div class="footer_boxes">
+      <div class="footer_box-text">
+        <p>@Cioara Raul/All rights served</p>
+      </div>
+      <div class="footer_boxes-links">
+        <div class="footer_box-link">
+          <a href="https://www.facebook.com/cioara.raul.7/photos_by">
+            <img src="../svg/facebook.svg" alt="insta" class="footer_svg" />
+          </a>
+        </div>
+        <div class="footer_box-link">
+          <a href="https://www.instagram.com/">
+            <img src="../svg/instagram.svg" alt="insta" class="footer_svg" />
+          </a>
+        </div>
+        <div class="footer_box-link">
+          <a href="https://x.com/cioara_raul?t=iC0nYt5m0LKUfhG3cYoG_w&s=08 ">
+            <img src="../svg/twitter.svg" alt="twiter" class="footer_svg" />
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

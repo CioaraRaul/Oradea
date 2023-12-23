@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/navBar.js" defer></script>
+    <script src="js/imageSlider.js" defer></script>
+    <script src="js/formJs.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_button_logo">
+        <a href="../../index.html"><img src="img/zrMBR.png" alt="logo" class="navbar_logo"></img></a>
+        <button class="btn" onclick="showBtn()">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="navbar_div">
+          <nav><a href="#">Nav1</a></nav>
+          <nav><a href="#">Nav2</a></nav>
+          <nav><a href="#">Nav3</a></nav>
+        </div>
+      </div>
+
+      <section class="slider__main">
+        <div class="slider__main__img">
+          <div>
+            <h1 class="slider__main__header">The image slider</h1>
+          </div>
+          <div class="slider_main__img_selector">
+            <img
+              src="img/360_F_283839302_yt6JIsE96Pj4PydFDcBNKDUnuSpYB9h0.jpg"
+              alt="city1"
+              class="slider__img slider__active"
+            /><img
+              src="img/chicago-city-lights-at-night.jpg"
+              alt="city2"
+              class="slider__img"
+            /><img
+              src="img/istockphoto-1273381718-612x612.jpg"
+              alt="city3"
+              class="slider__img"
+            />
+            <div class="arrow__div">
+              <img
+                src="SVG/arrow-bold-left.svg"
+                alt="SVG Image"
+                class="arrow__left"
+              />
+              <img
+                src="SVG/arrow-bold-right.svg"
+                alt="SVG Image"
+                class="arrow__right"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__form">
+        <div class="form">
+          <div>
+            <h2>The form header</h2>
+          </div>
+          <form action="submit-form" method="post" class="form__class">
+            <label for="username">Username</label>
+            <textarea
+              id="username"
+              type="text"
+              name="username"
+              placeholder="Cioara Raul"
+             
+            ></textarea>
+
+            <label for="email">Email</label>
+            <textarea
+              id="email"
+              type="text"
+              name="email"
+              placeholder="cioara@gmail.com"
+           
+            ></textarea>
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="I love your site"
+             
+            ></textarea>
+
+            <label for="phoneNumber">Phone number:</label>
+            <textarea
+              id="phoneNumber"
+              name="phoneNumber"
+              
+              placeholder="0747428923"
+            ></textarea>
+
+            <label for="mention">Any mention:</label>
+            <textarea
+              id="mention"
+              name="mention"
+              placeholder="I would like a rework for this"
+              
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

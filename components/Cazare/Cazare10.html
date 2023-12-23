@@ -4,16 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="cazare.css" />
+    <link rel="stylesheet" href="footerRes.css" />
+    <link rel="stylesheet" href="../../mobile.css" />
+    <script type="module" src="../../navbar.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="maxWidth900.js"></script>
+    <script type="module" src="form.js"></script>
+
     <title>Cazare 10</title>
   </head>
   <body>
     <header>
       <nav>
         <nav>
-          <img src="../../img/logo.png" alt="Logo" />
+          <a href="../../index.html"
+            ><img
+              src="../../img/logo-removebg-preview.png"
+              alt="Logo"
+              class="logoMain"
+          /></a>
         </nav>
         <div>
-          <nav>
+          <div class="btn-mobile">
+            <button class="mobile">
+              <img src="../../SVG/icons8-menu-100.png" alt="" class="icon" />
+            </button>
+          </div>
+          <nav class="mobile-width navbar_header">
             <li>
               <a href="../../index.html">Pagina principală</a>
             </li>
@@ -26,58 +43,124 @@
             <li>
               <a href="../Evenimente.html">Evenimente</a>
             </li>
+            <li>
+              <a href="../Contact.html">Contact</a>
+            </li>
           </nav>
         </div>
       </nav>
     </header>
     <main>
-      <h3>Un loc deosebit situal in Oradea.</h3>
+      <h1>Un loc deosebit situal in Oradea.</h1>
+
       <div>
-        <figure>
+        <div class="img_box">
           <img
             src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/493201913.jpg?k=9c35e71b4f9498529d72525a0384183881c24978c7777dac182f77be3529bc2f&o=&hp=1"
             alt=""
+            class="slider__img slider_hidden sliderMaxWidth900"
           />
-        </figure>
-        <figure>
           <img
             src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/493201647.jpg?k=b529b1bb6a5c34a8bd31b8dc0f524a05bfdca2f86533ea5263061944bfab4703&o=&hp=1"
             alt=""
+            class="slider__img"
           />
-        </figure>
-        <figure>
           <img
             src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/493201906.jpg?k=d339c81ae334a14e9d65237c6c466afd41c88feb465107765d7865225b4f4a36&o=&hp=1"
             alt=""
+            class="slider__img slider__active"
           />
-        </figure>
-        <figure>
           <img
             src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/493201656.jpg?k=b2ddfc9b23b9aaf5d7217f63d4ec19d6b5551f9b8d251fd0c7a8f04c1b20d2da&o=&hp=1"
             alt=""
+            class="slider__img"
+          />
+          <img
+            src="https://static.travelminit.com/thumbs/accm-467667/upstairs-boutique-bucuresti-11-676x439.jpg"
+            alt=""
+            class="slider__img slider_hidden"
+          />
+          <div class="arrow left-arrow">&#9665;</div>
+          <div class="arrow right-arrow">&#9655;</div>
+        </div>
+        <div class="maxWidthBtn">
+          <div class="max_left-box">
+            <button class="btn-prev">Prev</button>
+          </div>
+          <div class="max_right-box">
+            <button class="btn-right">Next</button>
+          </div>
+        </div>
+        <!-- <figure>
+          <img
+            src="https://static.travelminit.com/thumbs/accm-467663/upstairs-boutique-bucuresti-676x439.jpg"
+            alt=""
+            class="slider__img slider__active"
           />
         </figure>
         <figure>
           <img
-            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/493201911.jpg?k=c7a1fd56a8dabb4aa656a9cc38bf7728fdadcb5b1e153b9956c09ffc61858440&o=&hp=1"
+            src="https://static.travelminit.com/thumbs/accm-467671/upstairs-boutique-bucuresti-5-676x439.jpg"
             alt=""
+            class="slider__img"
           />
         </figure>
+        <figure>
+          <img
+            src="https://static.travelminit.com/thumbs/accm-467661/upstairs-boutique-bucuresti-6-676x439.jpg"
+            alt=""
+            class="slider__img"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://static.travelminit.com/thumbs/accm-467660/upstairs-boutique-bucuresti-13-676x439.jpg"
+            alt=""
+            class="slider__img"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://static.travelminit.com/thumbs/accm-467667/upstairs-boutique-bucuresti-11-676x439.jpg"
+            alt=""
+            class="slider__img"
+          />
+        </figure> -->
       </div>
       <form action="submit_form.php" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required /><br /><br />
+        <input type="text" id="name" name="name" /><br /><br />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required /><br /><br />
+        <input type="email" id="email" name="email" /><br /><br />
 
         <label for="number">Number: </label>
-        <input type="number" id="number" name="number" required />
+        <input type="number" id="number" name="number" />
         <br /><br />
-        <input type="submit" value="Submit" />
+        <button class="btn_form">Submit</button>
       </form>
     </main>
-    <br />
-    <footer><em> @copyright 2023 </em></footer>
+    <div class="footer_boxes">
+      <div class="footer_box-text">
+        <p>@Cioara Raul/All rights served</p>
+      </div>
+      <div class="footer_boxes-links">
+        <div class="footer_box-link">
+          <a href="https://www.facebook.com/cioara.raul.7/photos_by">
+            <img src="../../SVG/facebook.svg" alt="insta" class="footer_svg" />
+          </a>
+        </div>
+        <div class="footer_box-link">
+          <a href="https://www.instagram.com/">
+            <img src="../../SVG/instagram.svg" alt="insta" class="footer_svg" />
+          </a>
+        </div>
+        <div class="footer_box-link">
+          <a href="https://x.com/cioara_raul?t=iC0nYt5m0LKUfhG3cYoG_w&s=08 ">
+            <img src="../../SVG/twitter.svg" alt="twiter" class="footer_svg" />
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
